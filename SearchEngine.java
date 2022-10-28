@@ -20,7 +20,7 @@ class Handler implements URLHandler {
         else if (url.getPath().contains("/search")) {
             String[] args = url.getQuery().split("=");
             for(int i = 0; i < stringCheese.size(); i ++){
-                if(stringCheese.get(i).contains(args[i])){
+                if(stringCheese.get(i).contains(args[1])){
                         return stringCheese.get(i);
                 }
             }
